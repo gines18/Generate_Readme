@@ -102,7 +102,7 @@ ${tests}
 ${contributing}
 
 ## Questions
-My github: <www.github.com/${url}>
+My github: www.github.com/${url}
 My email address: ${contact}
 
 `
