@@ -1,11 +1,8 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
 
-
 let {description, description2, license, title, installation, installation2, usage, url, contact, tests, contributing} = await inquirer 
 .prompt([
-
-   
       {
           type: 'input',
           name: 'title',
@@ -46,7 +43,6 @@ let {description, description2, license, title, installation, installation2, usa
           name: 'contributing',
           message: "How can I contribute to this project?",
         },
-    
       {
           type: 'input',
           name: 'url',
@@ -57,7 +53,6 @@ let {description, description2, license, title, installation, installation2, usa
           name: 'contact',
           message: "My email address:",
         },
-
         {
             type: 'list',
             name: 'license',
@@ -67,18 +62,14 @@ let {description, description2, license, title, installation, installation2, usa
               return val.toLowerCase();
             },
           },
-      
 ])
 
 let readmeText =
-
-
-
 `
 Table of content:
 [Project title](#Project-title)
 [License](#License)
-[Description]#(Description)
+[Description](#Description)
 [Instalation](#Instalation)
 [Usage](#Usage)
 [Tests](#Tests)
@@ -130,7 +121,5 @@ if(license === "apache") {
         return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)" + " The Boost Software License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Boost License, with very few restrictions. It is named after the Boost C++ Libraries, a set of high-quality, peer-reviewed C++ libraries that are licensed under the Boost License.";
 } else (license === "bsd") 
     return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)" + " The BSD License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the BSD License, with very few restrictions. It is named after the Berkeley Software Distribution, a Unix operating system developed at the University of California, Berkeley.";
-
-
 
 }
