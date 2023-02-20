@@ -29,6 +29,6 @@ test
 test
 
 ## Questions
-My github: <www.github.com/gines18>
-My email address: riujis@op.pl
+My github: www.github.com/gines18
+My email address: rio@op.pl
 
