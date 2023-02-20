@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
 
-let {description, license, title, instalation, usage} = await inquirer 
+let {description, license, title, instalation, usage, contact} = await inquirer 
 .prompt([
 
    
@@ -28,8 +28,14 @@ let {description, license, title, instalation, usage} = await inquirer
       {
           type: 'input',
           name: 'description',
-          message: "Write a description of your project",
+          message: "Write a description of your project:",
         },
+      {
+          type: 'input',
+          name: 'contact',
+          message: "Email address:",
+        },
+
         {
             type: 'list',
             name: 'license',
@@ -49,13 +55,17 @@ ${title}
 # Description
 ${description}
 
+# Choose license
+${generateLicense(license)}
+
 # Installation
 ${instalation}
 
-## Choose license
-${generateLicense(license)}
+# Contact
+${contact}
 
-## Usage
+
+# Usage
 ${usage}
 
 `
