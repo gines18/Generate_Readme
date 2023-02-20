@@ -74,7 +74,7 @@ let readmeText =
 `# Project title
 ${title}
 
-## Choose license
+## License
 ${generateLicense(license)}
 
 ## Description
@@ -102,10 +102,9 @@ ${tests}
 ${contributing}
 
 ## Questions
-<details>
 My github: <www.github.com/${url}>
 My email address: ${contact}
-</details>
+
 `
 fs.writeFile("README.md", readmeText)
 

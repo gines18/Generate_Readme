@@ -1,7 +1,7 @@
 # Project title
 test
 
-## Choose license
+## License
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) The Apache License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Apache License, even for commercial purposes. It is one of the most widely used open-source licenses and is popular among developers and organizations that value permissive licensing.
 
 ## Description
@@ -29,7 +29,6 @@ test
 test
 
 ## Questions
-<details>
 My github: <www.github.com/gines18>
-My email address: ri@op.pl
-</details>
+My email address: riujis@op.pl
+
