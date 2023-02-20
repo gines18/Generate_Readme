@@ -67,7 +67,8 @@ let {description, description2, license, title, installation, installation2, usa
 let readmeText =
 `
 # Project title
-${title}
+${title} 
+${generateLicenseBadge(license)}
 
 ## Table of content:
 * [Project title](#Project-title)
@@ -80,7 +81,7 @@ ${title}
 * [Questions](#Questions)
 
 ## License
-${generateLicense(license)}
+${generateLicenseDescription(license)}
 
 ## Description
 ### What is the purpose of this project?
@@ -113,12 +114,22 @@ My email address: ${contact}
 `
 fs.writeFile("README.md", readmeText)
 
-function generateLicense(license){
+function generateLicenseBadge(license){
 if(license === "apache") {
-    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" + " The Apache License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Apache License, even for commercial purposes. It is one of the most widely used open-source licenses and is popular among developers and organizations that value permissive licensing.";
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 } else if (license === "boost") {
-        return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)" + " The Boost Software License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Boost License, with very few restrictions. It is named after the Boost C++ Libraries, a set of high-quality, peer-reviewed C++ libraries that are licensed under the Boost License.";
+        return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
 } else (license === "bsd") 
-    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)" + " The BSD License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the BSD License, with very few restrictions. It is named after the Berkeley Software Distribution, a Unix operating system developed at the University of California, Berkeley.";
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
+
+}
+
+function generateLicenseDescription(license){
+if(license === "apache") {
+    return " The Apache License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Apache License, even for commercial purposes. It is one of the most widely used open-source licenses and is popular among developers and organizations that value permissive licensing.";
+} else if (license === "boost") {
+        return " The Boost Software License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the Boost License, with very few restrictions. It is named after the Boost C++ Libraries, a set of high-quality, peer-reviewed C++ libraries that are licensed under the Boost License.";
+} else (license === "bsd") 
+    return " The BSD License is a permissive open-source license that allows users to use, modify, and distribute software licensed under the BSD License, with very few restrictions. It is named after the Berkeley Software Distribution, a Unix operating system developed at the University of California, Berkeley.";
 
 }
