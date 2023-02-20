@@ -71,7 +71,21 @@ let {description, description2, license, title, installation, installation2, usa
 ])
 
 let readmeText =
-`# Project title
+
+
+
+`
+Table of content:
+[Project title](#Project-title)
+[License](#License)
+[Description]#(Description)
+[Instalation](#Instalation)
+[Usage](#Usage)
+[Tests](#Tests)
+[Contributing](#Contributing)
+[Questions](#Questions)
+
+# Project title
 ${title}
 
 ## License
@@ -102,6 +116,7 @@ ${tests}
 ${contributing}
 
 ## Questions
+Where can I go if I have any questions about this project?
 My github: www.github.com/${url}
 My email address: ${contact}
 
