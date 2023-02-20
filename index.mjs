@@ -1,39 +1,51 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
 
-let {description, license, title, instalation, usage, contact} = await inquirer 
+
+let {description, description2, license, title, installation, installation2, usage, questions, contact} = await inquirer 
 .prompt([
 
    
       {
           type: 'input',
           name: 'title',
-          message: "Enter project tite:",
+          message: "What is your project title?",
         },
         {
             type: 'input',
             name: 'description',
-            message: "Write a description of your project:",
+            message: "What is the purpose of this project?",
+          },
+        {
+            type: 'input',
+            name: 'description2',
+            message: "What problem does this project aim to solve?",
           },
       {
           type: 'input',
-          name: 'instalation',
-          message: "Explain the project instalation:",
+          name: 'installation',
+          message: "What are the system requirements for installing this project?",
+        },
+      {
+          type: 'input',
+          name: 'installation2',
+          message: "What are the steps for installing this project?",
         },
       {
           type: 'input',
           name: 'usage',
           message: "What is the usage for this project?",
         },
+    
       {
           type: 'input',
-          name: 'description',
-          message: "Write a description of your project:",
+          name: 'questions',
+          message: "Enter your github username in case user have any questions about project:",
         },
       {
           type: 'input',
           name: 'contact',
-          message: "Email address:",
+          message: "My email address:",
         },
 
         {
@@ -52,20 +64,30 @@ let readmeText =
 `# Project title
 ${title}
 
-# Description
+## Description
+### What is the purpose of this project?
 ${description}
+### What problem does this project aim to solve?
+${description2}
 
-# Choose license
+## Choose license
 ${generateLicense(license)}
 
-# Installation
-${instalation}
+## Installation
+### What are the system requirements for installing this project?
+${installation}
+### What are the steps for installing this project?
+${installation2}
 
-# Contact
-${contact}
+## Questions
+### Where can I go if I have any questions about this project?
+<details>
+My github: ${questions}
+My email address: ${contact}
+</details>
 
-
-# Usage
+## Usage
+### How do I run this project?
 ${usage}
 
 `
