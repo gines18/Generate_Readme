@@ -69,7 +69,7 @@ let readmeText =
 # Project title
 ${title}
 
-Table of content:
+## Table of content:
 * [Project title](#Project-title)
 * [License](#License)
 * [Description](#Description)
@@ -107,7 +107,7 @@ ${tests}
 ${contributing}
 
 ## Questions
-### Where can I go if I have any questions about this project?
+### Where can I go if I have any questions about this project?<br>
 My github: www.github.com/${url}
 My email address: ${contact}
 `
