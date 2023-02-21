@@ -48,12 +48,12 @@ Inquirer is an NPM package that provides an easy way to capture user input in yo
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.10.39.png?raw=true" style="width: 1000px">
 
 #### Use terminal to answer questions asked by application
-##### To run this application use this code in your vscode terminal: node <file_name> and press Enter on your keyboard.
+##### To run this application use this code in your vscode terminal: node index.mjs and press Enter on your keyboard.
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.20.32.png?raw=true" style="width: 1000px">
 
 ## Usage
 ### How do I run this project?
-To use this app, simply run node index.js in your terminal and follow the prompts to answer the questions about your project. The app will generate a README file in the same directory.
+To use this app, simply run node index.mjs in your terminal and follow the prompts to answer the questions about your project. The app will generate a README file in the same directory.
 
 ## Tests
 ### Are there any known issues or bugs with this project??
