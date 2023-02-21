@@ -68,5 +68,5 @@ If you encounter any issues with the app, please submit a bug report. If you wou
 My github: www.github.com/gines18
 My email address: test@gmail.com
 
-Video:
+Watch video about this project:
 https://watch.screencastify.com/v/ygGS12QVwYs5cgao7G0A
