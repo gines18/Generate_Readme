@@ -32,13 +32,13 @@ To install this app, simply clone the repository and run npm install to install 
 ## Application Layout
 #### Import inquirer from node_modules.
 Inquirer is an NPM package that provides an easy way to capture user input in your Node. js command line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a . then promise function.
+
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.08.29.png?raw=true" style="width: 1000px">
 
 #### Use await keyword to make application wait for the asynchronous operation to complete before moving. 
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.08.53.png?raw=true" style="width: 1000px">
 
 #### Create file structure using backticks - an ES6 feature that allows you to create strings in JavaScript.
-
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.09.13.png?raw=true" style="width: 1000px">
 
 #### Function generate license badge and description based on user choice.
@@ -48,8 +48,7 @@ Inquirer is an NPM package that provides an easy way to capture user input in yo
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.10.39.png?raw=true" style="width: 1000px">
 
 #### Use terminal to answer questions asked by application
-### To run this application use this code in your terminal: node <file_name> and press Enter on your keyboard.
-
+##### To run this application use this code in your vscode terminal: node <file_name> and press Enter on your keyboard.
 <img src="https://github.com/gines18/Generate_Readme/blob/master/img/Screenshot%202023-02-21%20at%2013.20.32.png?raw=true" style="width: 1000px">
 
 ## Usage
