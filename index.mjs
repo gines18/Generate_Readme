@@ -65,6 +65,7 @@ let {description, description2, license, title, installation, installation2, usa
           },
 ])
 
+// Generate the text for the README file
 let readmeText =
 `
 # Project title
