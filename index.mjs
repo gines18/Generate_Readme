@@ -76,7 +76,7 @@ ${generateLicenseBadge(license)}
 * [Project title](#Project-title)
 * [License](#License)
 * [Description](#Description)
-* [Instalation](#Instalation)
+* [Installation](#Installation)
 * [Usage](#Usage)
 * [Tests](#Tests)
 * [Contributing](#Contributing)
