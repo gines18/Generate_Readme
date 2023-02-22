@@ -1,6 +1,7 @@
 import inquirer from 'inquirer';
 import fs from "fs/promises";
 
+// Use the inquirer package to prompt the user for information about the project
 let {description, description2, license, title, installation, installation2, usage, url, contact, tests, contributing} = await inquirer 
 .prompt([
       {
@@ -112,8 +113,11 @@ ${contributing}
 My github: www.github.com/${url}
 My email address: ${contact}
 `
+
+// Write the README file to disk
 fs.writeFile("README.md", readmeText)
 
+// Helper function to generate a license badge based on the license selected by the user
 function generateLicenseBadge(license){
 if(license === "apache") {
     return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
