@@ -65,7 +65,7 @@ If you encounter any issues with the app, please submit a bug report. If you wou
 ### Where can I go if I have any questions about this project?<br>
 My github: www.github.com/gines18
 
-My email address: test@gmail.com
+My email address: ruczkowski.m@gmail.com
 
 Watch video about this project:
 https://watch.screencastify.com/v/ygGS12QVwYs5cgao7G0A
